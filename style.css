@@ -141,11 +141,8 @@ a {
 .about-me {
     display: grid;
     text-wrap: balance;
+    text-align: justify;
 
-}
-
-.about-me>.information-about-me {
-    display: inline-flex;
 }
 
 .information-about-me p {
