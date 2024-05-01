@@ -46,10 +46,16 @@ a {
     gap: 30px;
 }
 
-.presentation>img {
+.presentation>.photo{
+    border-radius: 50%;
     object-fit: cover;
     max-width: 300px;
     justify-self: center;
+    overflow: hidden;
+}
+    
+.presentation>.photo>img {
+    
 }
 
 .person-information {
@@ -70,7 +76,7 @@ a {
     align-items: center;
 }
 
-.icons-information > a {
+.icons-information>a {
     color: #FFF;
 }
 
@@ -181,7 +187,7 @@ a {
 }
 
 ::-webkit-scrollbar-thumb {
-    background: #FFF;
+    background: #f0890b;
 }
 
 .menu-card {
@@ -193,24 +199,32 @@ a {
     margin: 30px 0px 0px 0px;
     justify-content: center;
     gap: 20px;
-    overflow: scroll;
+    overflow: auto;
     padding: 20px;
 }
 
 .card {
     display: grid;
+    padding: 5px;
     width: 200px;
     max-width: 100%;
     height: 100px;
-    background-color: white;
     border-radius: 50px;
-    transition: all 0.5s linear;
     flex-grow: 1;
+    place-items: center;
+    color: #f0890b;
+    transition: all 0.1s linear;
+    font-size: 1em;
+    background: linear-gradient(145deg, #ffffff, #e6e6e6);
+    border: 3px solid #f0890b;
+    overflow: hidden;
 }
 
 .card:hover {
-    border: 5px #f0890b solid;
-    transition: all 0.5s linear;
+    transform: translate(5px, 5px);
+    box-shadow: 6px 6px 12px #bfbfbf,
+        -12px -12px 24px #ffffff;
+
 }
 
 @media screen and (max-width:1023px) {
@@ -238,7 +252,7 @@ a {
         justify-content: center;
         height: 1200px;
     }
-
+    
     .right-sidebar {
         display: grid;
         justify-content: center;
