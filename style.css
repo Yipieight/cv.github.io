@@ -53,10 +53,6 @@ a {
     justify-self: center;
     overflow: hidden;
 }
-    
-.presentation>.photo>img {
-    
-}
 
 .person-information {
     display: grid;
@@ -108,21 +104,13 @@ a {
 .list-educational {
     display: grid;
     margin-top: 10px;
-    gap: 10px;
+    gap: 30px;
 }
 
 .list-educational>p>.year {
     margin: 10px 0px;
-}
-
-.list-educational>p>.year {
-    display: grid;
-    background: #FFF;
-    border-radius: 50px;
-    width: 6em;
-    height: 2em;
-    color: #f0890b;
-    place-items: center;
+    font-size: 0.8em;
+    color: #864a00;
 }
 
 
